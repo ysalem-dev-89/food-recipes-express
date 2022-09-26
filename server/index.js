@@ -5,6 +5,8 @@ const app = express();
 const cors = require('cors')
 
 app.use(cors());
+app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
+
 app.get('/api/dishes', (req, res) => {
   fs.readFile(path.join(__dirname, './data.json'), (err, result) => {
     if(err) res.status(500).json({message: 'error', data: {}});
