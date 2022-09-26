@@ -14,7 +14,7 @@ function App() {
 
 	useEffect(() => {
 		setTimeout(() => {
-			fetch('http://localhost:5000/api/dishes', {
+			fetch('/api/dishes', {
 				method: 'GET',
 				headers: {
 					'Content-Type': 'application/json'
