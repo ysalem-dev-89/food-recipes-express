@@ -9,9 +9,9 @@ const Dish = () => {
   return (
     <li className="dish-details">
       <h3>{dish.name}</h3>
-      <p>{dish.description}</p>
       <span>${dish.price.toFixed(2)}</span>
       <span>{dish.category}</span>
+      <p>{dish.description}</p>
     </li>
   )
 }
